@@ -52,6 +52,25 @@ module.exports = {
             route: '/',
             excludeClickSelectors: ['button']
         }
+    },
+    {        
+        type: 'LsCardPlaygroundCard',
+        source: './src/cards/LsCardPlaygroundCard.jsx',
+        title: 'LS Card Playground',
+        displayCardType: 'LS Card Playground',
+        description: 'LS Card Playground',
+        configuration: {
+            PIPELINE_GET_DATA: {
+                label: 'Data Connect Pipeline Name',
+                type: 'text',
+                required: true,
+                defaultValue: 'LSadditionalstudentinfo'
+            }
+        },
+        pageRoute: {
+            route: '/',
+            excludeClickSelectors: ['button']
+        },
     }],
     page: {
         source: './src/page'
